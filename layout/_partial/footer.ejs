@@ -1,0 +1,11 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="footer-outer">
+    <div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>,&nbsp;<a href="/atom.xml">RSS</a><a href="http://mail.qq.com/cgi-bin/feed?u=http://zhangywblog.com/atom.xml" target="_blank">，订阅到QQ邮箱</a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,106 @@
+#header
+  font-size: 14px
+  position: relative
+  &.mobile-on
+    #main-nav,
+    #sub-nav
+      display: block
+
+#header-outer
+  position: fixed
+  margin: 0
+  top: 0
+  left: 0
+  z-index: 999999
+  background-color: #fff
+  width: 100%
+
+.houter
+  box-shadow: 0px 0px 10px 0px #B5B5B5
+
+#header-inner
+  position: relative
+  overflow: hidden
+
+
+#main-nav
+  float: left
+  margin-left: 2%
+
+$nav-link
+  float: left
+  color: black
+  text-decoration: none
+  transition: opacity 0.2s
+  display: block
+  padding: 20px 15px
+
+.main-nav-link
+  @extend $nav-link
+  font-weight: 600
+  @media mq-mobile
+    float: none
+    text-align: center
+
+#main-nav-toggle
+  @extend $nav-link
+  display: none
+  font-size: 16px
+  padding-left: 0
+  font-family: font-icon
+  &:before
+    content: "\f0c9"
+  @media mq-mobile
+    display: block
+    margin: 0 90%
+
+#logo
+  float:left
+  @media mq-mobile
+    float: none
+    width: 100%
+    display: block
+    background-position: center
+
+#sub-nav
+  float: right
+  margin-right: 2%
+
+#main-nav,
+#sub-nav
+  @media mq-mobile
+    display: none
+    float: none
+
+#search-form-wrap
+  top: 15px
+  padding: 20px 15px
+  @media mq-mobile
+    text-align: center
+
+.search-form
+  clearfix()
+  @media mq-mobile
+    display: inline-block
+
+.search-form-input
+  width: 150px
+  border: none
+  float: left
+  font-size: 14px
+  background: none
+  color: color-default
+  outline: none
+  border-bottom: 1px solid #9B9B9B
+  &::-webkit-search-results-decoration
+  &::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+.search-form-submit
+  @extend $nav-link
+  float: left
+  padding: 0
+  font-family: font-icon
+  border: none
+  background: none
+  cursor: pointer
