@@ -1,4 +1,4 @@
-# Minos
+# Box
 
 ### A simple Hexo theme.
 #### >> [Demo](http://blog.zhangyingwei.com/)
